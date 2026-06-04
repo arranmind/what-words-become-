@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What Words Become</title>
+  <meta name="description" content="A literary audio project following a chain of creative influence.">
+  <meta name="robots" content="noindex, nofollow">
+
+  <meta property="og:title" content="What Words Become">
+  <meta property="og:description" content="A literary audio project following a chain of creative influence.">
+  <meta property="og:type" content="website">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== PASSWORD GATE ========== -->
+  <div class="gate" id="gate">
+    <div class="gate-inner">
+      <img src="assets/logo.png" alt="What Words Become" class="gate-logo">
+      <p class="gate-message">This is an invitation-only space.</p>
+      <div class="gate-form">
+        <input
+          type="password"
+          class="gate-input"
+          id="gate-input"
+          placeholder="Enter password"
+          aria-label="Password"
+          autocomplete="off"
+        >
+        <button class="gate-button" id="gate-button">Enter</button>
+      </div>
+      <p class="gate-error" id="gate-error">That's not right. Try again.</p>
+    </div>
+  </div>
+
+  <!-- ========== SITE CONTENT (hidden until authenticated) ========== -->
+  <div class="site" id="site">
+
+    <!-- ========== NAVIGATION ========== -->
+    <nav class="nav" id="main-nav" role="navigation" aria-label="Main navigation">
+      <a href="#hero" class="nav-logo" id="nav-logo">
+        <img src="assets/logo.png" alt="What Words Become" class="nav-logo-img">
+      </a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#chain" onclick="closeMenu()">Episode One</a></li>
+        <li><a href="#format" onclick="closeMenu()">The Format</a></li>
+        <li><a href="#hosts" onclick="closeMenu()">The Hosts</a></li>
+        <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+      </ul>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+
+    <!-- ========== SECTION 1: HERO ========== -->
+    <section class="hero" id="hero">
+      <video class="hero-video" autoplay muted loop playsinline>
+        <source src="assets/demand_background_04.mp4" type="video/mp4">
+      </video>
+
+      <div class="hero-content">
+        <h1 class="hero-title">
+          <img src="assets/logo.png" alt="What Words Become" class="hero-logo-img">
+        </h1>
+
+        <p class="hero-subtitle">
+          A literary audio project following a chain of creative influence.
+        </p>
+
+        <div class="hero-steps">
+          <p>One creator responds.</p>
+          <p>The next creator inherits only that response.</p>
+          <p>Through writing and conversation, we follow what words become.</p>
+        </div>
+
+        <p class="hero-question">What did this make you create?</p>
+      </div>
+
+      <div class="hero-scroll-indicator">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ========== DIVIDER ========== -->
+    <div class="section-divider"></div>
+
+    <!-- ========== SECTION 2: THE CHAIN — EPISODE ONE (moved up) ========== -->
+    <section class="section-chain" id="chain">
+      <div class="chain-inner">
+        <div class="section-label reveal" style="text-align: center;">Episode One — The First Chain</div>
+
+        <p class="chain-intro reveal">A passage from Max Porter's <em>Grief Is the Thing with Feathers</em> enters the chain and is transformed — link by link — into something no one could have predicted.</p>
+
+        <!-- Chain links -->
+        <div class="chain-timeline">
+
+          <!-- Link 0: The Spark -->
+          <div class="chain-link chain-link--spark reveal">
+            <div class="chain-link-marker">
+              <div class="chain-dot spark-dot"></div>
+            </div>
+            <div class="chain-link-content">
+              <div class="chain-link-label">The Spark</div>
+              <h3 class="chain-link-name">Max Porter</h3>
+              <div class="chain-link-source">Grief Is the Thing with Feathers</div>
+              <blockquote class="chain-link-quote">
+                "You were done being hopeless. Grieving is something you're still doing."
+              </blockquote>
+              <p class="chain-link-note">This passage is sent to the first guest. What will it become?</p>
+            </div>
+          </div>
+
+          <div class="chain-connector reveal"><div class="chain-line"></div></div>
+
+          <!-- Link 1 -->
+          <div class="chain-link reveal">
+            <div class="chain-link-marker">
+              <div class="chain-dot"></div>
+              <div class="chain-visibility">Sees: Porter's passage</div>
+            </div>
+            <div class="chain-link-content">
+              <div class="chain-link-label">Guest 1 — Response</div>
+              <h3 class="chain-link-name">Rob Delaney</h3>
+              <div class="chain-link-form">Written response — form TBC</div>
+              <p class="chain-link-description">Receives Porter's passage. Creates an original piece of work in response. Joins the hosts for conversation about what emerged.</p>
+            </div>
+          </div>
+
+          <div class="chain-connector reveal"><div class="chain-line"></div></div>
+
+          <!-- Link 2 -->
+          <div class="chain-link reveal">
+            <div class="chain-link-marker">
+              <div class="chain-dot"></div>
+              <div class="chain-visibility">Sees: only Delaney's work</div>
+            </div>
+            <div class="chain-link-content">
+              <div class="chain-link-label">Guest 2 — Response</div>
+              <h3 class="chain-link-name">Hollie McNish</h3>
+              <div class="chain-link-form">Written response — form TBC</div>
+              <p class="chain-link-description">Never sees the original Porter passage. Receives only Delaney's piece. What will Hollie receive? Unknown. She creates something entirely new in response.</p>
+            </div>
+          </div>
+
+          <div class="chain-connector reveal"><div class="chain-line"></div></div>
+
+          <!-- Link 3 -->
+          <div class="chain-link reveal">
+            <div class="chain-link-marker">
+              <div class="chain-dot"></div>
+              <div class="chain-visibility">Sees: only McNish's work</div>
+            </div>
+            <div class="chain-link-content">
+              <div class="chain-link-label">Guest 3 — Response</div>
+              <h3 class="chain-link-name">Dizraeli</h3>
+              <div class="chain-link-form">Written response — form TBC</div>
+              <p class="chain-link-description">Never sees Porter. Never sees Delaney. Receives only McNish's work. What will Dizraeli receive? Unknown. The transformation goes deeper.</p>
+            </div>
+          </div>
+
+          <div class="chain-connector reveal"><div class="chain-line"></div></div>
+
+          <!-- Link 4: Episode 2 -->
+          <div class="chain-link chain-link--next reveal">
+            <div class="chain-link-marker">
+              <div class="chain-dot next-dot"></div>
+            </div>
+            <div class="chain-link-content">
+              <div class="chain-link-label">What comes next</div>
+              <h3 class="chain-link-name">Episode Two</h3>
+              <p class="chain-link-description">The final fragment from Dizraeli's response becomes the spark for the next episode. What will Episode Two begin with? Unknown. A new chain begins. Nobody plans where it goes.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="chain-observation reveal">
+          <p>The chain might begin with grief and end with love.<br>Nobody planned that. Nobody engineered it.<br>The audience witnesses the transformation.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SECTION 3: THE KILLER LINE — Full Screen ========== -->
+    <section class="section-killer" id="killer">
+      <div class="killer-inner reveal">
+        <p class="killer-line uppercase">THE AUDIENCE SEES THE WHOLE CHAIN.</p>
+        <p class="killer-line killer-line--second uppercase">NO ONE ELSE DOES.</p>
+        <p class="killer-subtext">The participants inherit only the link before them.</p>
+      </div>
+    </section>
+
+    <!-- ========== DIVIDER ========== -->
+    <div class="section-divider"></div>
+
+    <!-- ========== SECTION 4: THE FORMAT ========== -->
+    <section class="section-format" id="format">
+      <div class="format-inner">
+        <div class="section-label reveal">The Format</div>
+
+        <div class="format-intro reveal">
+          <p>Each episode begins with a spark.</p>
+          <p class="spark-list">A passage. A poem. A question. A fragment. A line of text.</p>
+        </div>
+
+        <!-- Step-by-step -->
+        <div class="format-steps">
+          <div class="format-step reveal">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <p>The spark is sent to <strong>Guest 1</strong>.</p>
+              <p class="step-detail">They create an original piece of work in response. A poem. An essay. A reflection. A story. A letter. Anything.</p>
+              <p class="step-detail">Guest 1 then joins the hosts for a conversation about what emerged.</p>
+            </div>
+          </div>
+
+          <div class="format-step reveal">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <p><strong>Guest 2 never sees the original spark.</strong></p>
+              <p class="step-detail">They only receive Guest 1's work. They create an entirely new piece in response. Then they join the hosts for conversation.</p>
+            </div>
+          </div>
+
+          <div class="format-step reveal">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <p><strong>Guest 3 never sees the original spark. Never sees Guest 1's work.</strong></p>
+              <p class="step-detail">They only receive Guest 2's piece. They create something new. The chain continues.</p>
+            </div>
+          </div>
+
+          <div class="format-step reveal">
+            <div class="step-number">→</div>
+            <div class="step-content">
+              <p>The final line, image, idea or fragment from the last guest <strong>becomes the spark for the next episode</strong>.</p>
+              <p class="step-detail">Episode 1 creates Episode 2. Episode 2 creates Episode 3. The project becomes self-generating.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== DIVIDER ========== -->
+    <div class="section-divider"></div>
+
+    <!-- ========== SECTION 5: WHY THIS IS DIFFERENT ========== -->
+    <section class="section-different" id="different">
+      <div class="different-inner">
+        <div class="section-label reveal" style="text-align: center;">Why This Is Different</div>
+
+        <div class="different-comparison reveal">
+          <div class="comparison-item">
+            <span class="comparison-label">Most interview podcasts ask:</span>
+            <span class="comparison-question">"What do you think?"</span>
+          </div>
+          <div class="comparison-item">
+            <span class="comparison-label">Most literary programmes ask:</span>
+            <span class="comparison-question">"What did you write?"</span>
+          </div>
+          <div class="comparison-item comparison-item--ours">
+            <span class="comparison-label">What Words Become asks:</span>
+            <span class="comparison-question comparison-question--ours">"What did this make you create?"</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== DIVIDER ========== -->
+    <div class="section-divider"></div>
+
+    <!-- ========== SECTION 6: WHAT WE'RE LOOKING FOR (AMBITION) ========== -->
+    <section class="section-ambition" id="ambition">
+      <div class="ambition-inner">
+        <div class="section-label reveal" style="text-align: center;">What We're Looking For</div>
+
+        <div class="ambition-text reveal">
+          <p class="ambition-list">Not promotion.<br>Not career retrospectives.<br>Not panel discussions.</p>
+          <p class="ambition-statement">We are interested in moments when a piece of writing changes the direction of someone's thinking.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== DIVIDER ========== -->
+    <div class="section-divider"></div>
+
+    <!-- ========== SECTION 7: WHY WE THINK THIS MATTERS ========== -->
+    <section class="section-matters" id="matters">
+      <div class="matters-inner">
+        <div class="section-label reveal" style="text-align: center;">Why We Think This Matters</div>
+
+        <div class="matters-text reveal">
+          <p>Creative work is often made alone.</p>
+          <p>Conversation often disappears.</p>
+          <p>What Words Become creates a chain of influence where one act of creation becomes the beginning of another.</p>
+          <p class="matters-emphasis">We are interested not only in what people make, but what their work makes possible.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== DIVIDER ========== -->
+    <div class="section-divider"></div>
+
+    <!-- ========== SECTION 8: THE HOSTS ========== -->
+    <section class="section-hosts" id="hosts">
+      <div class="hosts-inner">
+        <div class="section-label reveal" style="text-align: center;">The Hosts</div>
+
+        <p class="hosts-intro reveal">Not interviewers. Curators of discovery.</p>
+
+        <div class="hosts-grid">
+          <div class="host-member reveal">
+            <div class="host-portrait">
+              <img src="assets/Arran.jpg" alt="Arran D'Aubigny">
+            </div>
+            <h3 class="host-name">Arran D'Aubigny</h3>
+            <div class="host-role">Co-creator & Host</div>
+            <p class="host-bio">He guides the conversation toward discovery, pushing relentlessly beyond rehearsed anecdotes. His focus remains entirely on the creative pivot and what happens in the spaces between links.</p>
+          </div>
+
+          <div class="host-member reveal">
+            <div class="host-portrait">
+              <img src="assets/John.jpeg" alt="John Berkavitch">
+            </div>
+            <h3 class="host-name">John Berkavitch</h3>
+            <div class="host-role">Co-creator & Host</div>
+            <p class="host-bio">He dissects the mechanical shifts in the writing, exploring how fragments are fundamentally repurposed. He treats every piece of text as a living organism capable of infinite adaptation.</p>
+          </div>
+
+          <div class="host-member reveal">
+            <div class="host-portrait">
+              <img src="assets/Rich.jpeg" alt="Rich Lobb">
+            </div>
+            <h3 class="host-name">Rich Lobb</h3>
+            <div class="host-role">Producer & Musician</div>
+            <p class="host-bio">He shapes the precise sonic environment that surrounds the chain. His scoring provides the emotional architecture, amplifying the tension of what the words are actively becoming.</p>
+          </div>
+        </div>
+
+        <div class="hosts-approach reveal">
+          <p>Their role is to explore: what stayed. What changed. What disappeared. What surprised. What was inherited. What was passed forward.</p>
+          <p class="hosts-focus">The focus is never biography. The focus is always the work.</p>
+        </div>
+
+        <div class="hosts-outcome reveal">
+          <div class="outcome-item">
+            <div class="outcome-label">Participants leave feeling:</div>
+            <p class="outcome-quote">"I really felt heard and I did not expect to be met like that."</p>
+          </div>
+          <div class="outcome-item">
+            <div class="outcome-label">Listeners feel:</div>
+            <p class="outcome-quote">"I did not expect to want to keep listening."</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== DIVIDER ========== -->
+    <div class="section-divider"></div>
+
+    <!-- ========== SECTION 9: WHERE THIS COULD GO ========== -->
+    <section class="section-partnerships" id="partnerships">
+      <div class="partnerships-inner">
+        <div class="section-label reveal" style="text-align: center;">Where This Could Go</div>
+
+        <div class="partnerships-content reveal">
+          <ul class="partnerships-list">
+            <li>Podcast Series</li>
+            <li>Live Events</li>
+            <li>Festival Editions</li>
+            <li>Educational Programmes</li>
+            <li>Anthology Publication</li>
+            <li>National Partnerships</li>
+          </ul>
+
+          <p class="partnerships-vision">What Words Become is designed as a cultural project whose first expression is audio.</p>
+        </div>
+
+        <div class="partnerships-link reveal">
+          <a href="https://goallin.org.uk" target="_blank" rel="noopener">goallin.org.uk</a>
+          <span class="partnerships-link-label">Aligned with National Year of Reading 2026 — "Go All In"</span>
+        </div>
+
+        <div class="partnerships-supporters reveal">
+          <span>Supported by the Department for Education, National Literacy Trust, Arts Council England, and partners.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== DIVIDER ========== -->
+    <div class="section-divider"></div>
+
+    <!-- ========== SECTION 10: CONTACT ========== -->
+    <section class="section-contact" id="contact">
+      <div class="contact-inner">
+        <div class="contact-text reveal">
+          The first chain is now taking shape.
+        </div>
+
+        <p class="contact-cta reveal">If this resonates, we'd like to talk.</p>
+
+        <a href="mailto:hello@whatwordsbecome.com" class="contact-email reveal">hello@whatwordsbecome.com</a>
+      </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="footer-copyright">
+          &copy; 2025 What Words Become. All rights reserved.
+        </div>
+        <div class="footer-credit">
+          A project by Arran D'Aubigny & John Berkavitch
+        </div>
+      </div>
+    </footer>
+
+  </div><!-- /site -->
+
+  <script src="script.js"></script>
+</body>
+</html>

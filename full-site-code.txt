@@ -1,0 +1,2141 @@
+=== index.html ===
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What Words Become</title>
+  <meta name="description" content="A literary audio project following a chain of creative influence.">
+  <meta name="robots" content="noindex, nofollow">
+
+  <meta property="og:title" content="What Words Become">
+  <meta property="og:description" content="A literary audio project following a chain of creative influence.">
+  <meta property="og:type" content="website">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== PASSWORD GATE ========== -->
+  <div class="gate" id="gate">
+    <div class="gate-inner">
+      <img src="assets/logo.png" alt="What Words Become" class="gate-logo">
+      <p class="gate-message">This is an invitation-only space.</p>
+      <div class="gate-form">
+        <input
+          type="password"
+          class="gate-input"
+          id="gate-input"
+          placeholder="Enter password"
+          aria-label="Password"
+          autocomplete="off"
+        >
+        <button class="gate-button" id="gate-button">Enter</button>
+      </div>
+      <p class="gate-error" id="gate-error">That's not right. Try again.</p>
+    </div>
+  </div>
+
+  <!-- ========== SITE CONTENT (hidden until authenticated) ========== -->
+  <div class="site" id="site">
+
+    <!-- ========== NAVIGATION ========== -->
+    <nav class="nav" id="main-nav" role="navigation" aria-label="Main navigation">
+      <a href="#hero" class="nav-logo" id="nav-logo">
+        <img src="assets/logo.png" alt="What Words Become" class="nav-logo-img">
+      </a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#chain" onclick="closeMenu()">Episode One</a></li>
+        <li><a href="#format" onclick="closeMenu()">The Format</a></li>
+        <li><a href="#hosts" onclick="closeMenu()">The Hosts</a></li>
+        <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+      </ul>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+
+    <!-- ========== SECTION 1: HERO ========== -->
+    <section class="hero" id="hero">
+      <video class="hero-video" autoplay muted loop playsinline>
+        <source src="assets/demand_background_04.mp4" type="video/mp4">
+      </video>
+
+      <div class="hero-content">
+        <h1 class="hero-title">
+          <img src="assets/logo.png" alt="What Words Become" class="hero-logo-img">
+        </h1>
+
+        <p class="hero-subtitle">
+          A literary audio project following a chain of creative influence.
+        </p>
+
+        <div class="hero-steps">
+          <p>One creator responds.</p>
+          <p>The next creator inherits only that response.</p>
+          <p>Through writing and conversation, we follow what words become.</p>
+        </div>
+
+        <p class="hero-question">What did this make you create?</p>
+      </div>
+
+      <div class="hero-scroll-indicator">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ========== DIVIDER ========== -->
+    <div class="section-divider"></div>
+
+    <!-- ========== SECTION 2: THE CHAIN — EPISODE ONE (moved up) ========== -->
+    <section class="section-chain" id="chain">
+      <div class="chain-inner">
+        <div class="section-label reveal" style="text-align: center;">Episode One — The First Chain</div>
+
+        <p class="chain-intro reveal">A passage from Max Porter's <em>Grief Is the Thing with Feathers</em> enters the chain and is transformed — link by link — into something no one could have predicted.</p>
+
+        <!-- Chain links -->
+        <div class="chain-timeline">
+
+          <!-- Link 0: The Spark -->
+          <div class="chain-link chain-link--spark reveal">
+            <div class="chain-link-marker">
+              <div class="chain-dot spark-dot"></div>
+            </div>
+            <div class="chain-link-content">
+              <div class="chain-link-label">The Spark</div>
+              <h3 class="chain-link-name">Max Porter</h3>
+              <div class="chain-link-source">Grief Is the Thing with Feathers</div>
+              <blockquote class="chain-link-quote">
+                "You were done being hopeless. Grieving is something you're still doing."
+              </blockquote>
+              <p class="chain-link-note">This passage is sent to the first guest. What will it become?</p>
+            </div>
+          </div>
+
+          <div class="chain-connector reveal"><div class="chain-line"></div></div>
+
+          <!-- Link 1 -->
+          <div class="chain-link reveal">
+            <div class="chain-link-marker">
+              <div class="chain-dot"></div>
+              <div class="chain-visibility">Sees: Porter's passage</div>
+            </div>
+            <div class="chain-link-content">
+              <div class="chain-link-label">Guest 1 — Response</div>
+              <h3 class="chain-link-name">Rob Delaney</h3>
+              <div class="chain-link-form">Written response — form TBC</div>
+              <p class="chain-link-description">Receives Porter's passage. Creates an original piece of work in response. Joins the hosts for conversation about what emerged.</p>
+            </div>
+          </div>
+
+          <div class="chain-connector reveal"><div class="chain-line"></div></div>
+
+          <!-- Link 2 -->
+          <div class="chain-link reveal">
+            <div class="chain-link-marker">
+              <div class="chain-dot"></div>
+              <div class="chain-visibility">Sees: only Delaney's work</div>
+            </div>
+            <div class="chain-link-content">
+              <div class="chain-link-label">Guest 2 — Response</div>
+              <h3 class="chain-link-name">Hollie McNish</h3>
+              <div class="chain-link-form">Written response — form TBC</div>
+              <p class="chain-link-description">Never sees the original Porter passage. Receives only Delaney's piece. What will Hollie receive? Unknown. She creates something entirely new in response.</p>
+            </div>
+          </div>
+
+          <div class="chain-connector reveal"><div class="chain-line"></div></div>
+
+          <!-- Link 3 -->
+          <div class="chain-link reveal">
+            <div class="chain-link-marker">
+              <div class="chain-dot"></div>
+              <div class="chain-visibility">Sees: only McNish's work</div>
+            </div>
+            <div class="chain-link-content">
+              <div class="chain-link-label">Guest 3 — Response</div>
+              <h3 class="chain-link-name">Dizraeli</h3>
+              <div class="chain-link-form">Written response — form TBC</div>
+              <p class="chain-link-description">Never sees Porter. Never sees Delaney. Receives only McNish's work. What will Dizraeli receive? Unknown. The transformation goes deeper.</p>
+            </div>
+          </div>
+
+          <div class="chain-connector reveal"><div class="chain-line"></div></div>
+
+          <!-- Link 4: Episode 2 -->
+          <div class="chain-link chain-link--next reveal">
+            <div class="chain-link-marker">
+              <div class="chain-dot next-dot"></div>
+            </div>
+            <div class="chain-link-content">
+              <div class="chain-link-label">What comes next</div>
+              <h3 class="chain-link-name">Episode Two</h3>
+              <p class="chain-link-description">The final fragment from Dizraeli's response becomes the spark for the next episode. What will Episode Two begin with? Unknown. A new chain begins. Nobody plans where it goes.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="chain-observation reveal">
+          <p>The chain might begin with grief and end with love.<br>Nobody planned that. Nobody engineered it.<br>The audience witnesses the transformation.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SECTION 3: THE KILLER LINE — Full Screen ========== -->
+    <section class="section-killer" id="killer">
+      <div class="killer-inner reveal">
+        <p class="killer-line uppercase">THE AUDIENCE SEES THE WHOLE CHAIN.</p>
+        <p class="killer-line killer-line--second uppercase">NO ONE ELSE DOES.</p>
+        <p class="killer-subtext">The participants inherit only the link before them.</p>
+      </div>
+    </section>
+
+    <!-- ========== DIVIDER ========== -->
+    <div class="section-divider"></div>
+
+    <!-- ========== SECTION 4: THE FORMAT ========== -->
+    <section class="section-format" id="format">
+      <div class="format-inner">
+        <div class="section-label reveal">The Format</div>
+
+        <div class="format-intro reveal">
+          <p>Each episode begins with a spark.</p>
+          <p class="spark-list">A passage. A poem. A question. A fragment. A line of text.</p>
+        </div>
+
+        <!-- Step-by-step -->
+        <div class="format-steps">
+          <div class="format-step reveal">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <p>The spark is sent to <strong>Guest 1</strong>.</p>
+              <p class="step-detail">They create an original piece of work in response. A poem. An essay. A reflection. A story. A letter. Anything.</p>
+              <p class="step-detail">Guest 1 then joins the hosts for a conversation about what emerged.</p>
+            </div>
+          </div>
+
+          <div class="format-step reveal">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <p><strong>Guest 2 never sees the original spark.</strong></p>
+              <p class="step-detail">They only receive Guest 1's work. They create an entirely new piece in response. Then they join the hosts for conversation.</p>
+            </div>
+          </div>
+
+          <div class="format-step reveal">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <p><strong>Guest 3 never sees the original spark. Never sees Guest 1's work.</strong></p>
+              <p class="step-detail">They only receive Guest 2's piece. They create something new. The chain continues.</p>
+            </div>
+          </div>
+
+          <div class="format-step reveal">
+            <div class="step-number">→</div>
+            <div class="step-content">
+              <p>The final line, image, idea or fragment from the last guest <strong>becomes the spark for the next episode</strong>.</p>
+              <p class="step-detail">Episode 1 creates Episode 2. Episode 2 creates Episode 3. The project becomes self-generating.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== DIVIDER ========== -->
+    <div class="section-divider"></div>
+
+    <!-- ========== SECTION 5: WHY THIS IS DIFFERENT ========== -->
+    <section class="section-different" id="different">
+      <div class="different-inner">
+        <div class="section-label reveal" style="text-align: center;">Why This Is Different</div>
+
+        <div class="different-comparison reveal">
+          <div class="comparison-item">
+            <span class="comparison-label">Most interview podcasts ask:</span>
+            <span class="comparison-question">"What do you think?"</span>
+          </div>
+          <div class="comparison-item">
+            <span class="comparison-label">Most literary programmes ask:</span>
+            <span class="comparison-question">"What did you write?"</span>
+          </div>
+          <div class="comparison-item comparison-item--ours">
+            <span class="comparison-label">What Words Become asks:</span>
+            <span class="comparison-question comparison-question--ours">"What did this make you create?"</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== DIVIDER ========== -->
+    <div class="section-divider"></div>
+
+    <!-- ========== SECTION 6: WHAT WE'RE LOOKING FOR (AMBITION) ========== -->
+    <section class="section-ambition" id="ambition">
+      <div class="ambition-inner">
+        <div class="section-label reveal" style="text-align: center;">What We're Looking For</div>
+
+        <div class="ambition-text reveal">
+          <p class="ambition-list">Not promotion.<br>Not career retrospectives.<br>Not panel discussions.</p>
+          <p class="ambition-statement">We are interested in moments when a piece of writing changes the direction of someone's thinking.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== DIVIDER ========== -->
+    <div class="section-divider"></div>
+
+    <!-- ========== SECTION 7: WHY WE THINK THIS MATTERS ========== -->
+    <section class="section-matters" id="matters">
+      <div class="matters-inner">
+        <div class="section-label reveal" style="text-align: center;">Why We Think This Matters</div>
+
+        <div class="matters-text reveal">
+          <p>Creative work is often made alone.</p>
+          <p>Conversation often disappears.</p>
+          <p>What Words Become creates a chain of influence where one act of creation becomes the beginning of another.</p>
+          <p class="matters-emphasis">We are interested not only in what people make, but what their work makes possible.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== DIVIDER ========== -->
+    <div class="section-divider"></div>
+
+    <!-- ========== SECTION 8: THE HOSTS ========== -->
+    <section class="section-hosts" id="hosts">
+      <div class="hosts-inner">
+        <div class="section-label reveal" style="text-align: center;">The Hosts</div>
+
+        <p class="hosts-intro reveal">Not interviewers. Curators of discovery.</p>
+
+        <div class="hosts-grid">
+          <div class="host-member reveal">
+            <div class="host-portrait">
+              <img src="assets/Arran.jpg" alt="Arran D'Aubigny">
+            </div>
+            <h3 class="host-name">Arran D'Aubigny</h3>
+            <div class="host-role">Co-creator & Host</div>
+            <p class="host-bio">He guides the conversation toward discovery, pushing relentlessly beyond rehearsed anecdotes. His focus remains entirely on the creative pivot and what happens in the spaces between links.</p>
+          </div>
+
+          <div class="host-member reveal">
+            <div class="host-portrait">
+              <img src="assets/John.jpeg" alt="John Berkavitch">
+            </div>
+            <h3 class="host-name">John Berkavitch</h3>
+            <div class="host-role">Co-creator & Host</div>
+            <p class="host-bio">He dissects the mechanical shifts in the writing, exploring how fragments are fundamentally repurposed. He treats every piece of text as a living organism capable of infinite adaptation.</p>
+          </div>
+
+          <div class="host-member reveal">
+            <div class="host-portrait">
+              <img src="assets/Rich.jpeg" alt="Rich Lobb">
+            </div>
+            <h3 class="host-name">Rich Lobb</h3>
+            <div class="host-role">Producer & Musician</div>
+            <p class="host-bio">He shapes the precise sonic environment that surrounds the chain. His scoring provides the emotional architecture, amplifying the tension of what the words are actively becoming.</p>
+          </div>
+        </div>
+
+        <div class="hosts-approach reveal">
+          <p>Their role is to explore: what stayed. What changed. What disappeared. What surprised. What was inherited. What was passed forward.</p>
+          <p class="hosts-focus">The focus is never biography. The focus is always the work.</p>
+        </div>
+
+        <div class="hosts-outcome reveal">
+          <div class="outcome-item">
+            <div class="outcome-label">Participants leave feeling:</div>
+            <p class="outcome-quote">"I really felt heard and I did not expect to be met like that."</p>
+          </div>
+          <div class="outcome-item">
+            <div class="outcome-label">Listeners feel:</div>
+            <p class="outcome-quote">"I did not expect to want to keep listening."</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== DIVIDER ========== -->
+    <div class="section-divider"></div>
+
+    <!-- ========== SECTION 9: WHERE THIS COULD GO ========== -->
+    <section class="section-partnerships" id="partnerships">
+      <div class="partnerships-inner">
+        <div class="section-label reveal" style="text-align: center;">Where This Could Go</div>
+
+        <div class="partnerships-content reveal">
+          <ul class="partnerships-list">
+            <li>Podcast Series</li>
+            <li>Live Events</li>
+            <li>Festival Editions</li>
+            <li>Educational Programmes</li>
+            <li>Anthology Publication</li>
+            <li>National Partnerships</li>
+          </ul>
+
+          <p class="partnerships-vision">What Words Become is designed as a cultural project whose first expression is audio.</p>
+        </div>
+
+        <div class="partnerships-link reveal">
+          <a href="https://goallin.org.uk" target="_blank" rel="noopener">goallin.org.uk</a>
+          <span class="partnerships-link-label">Aligned with National Year of Reading 2026 — "Go All In"</span>
+        </div>
+
+        <div class="partnerships-supporters reveal">
+          <span>Supported by the Department for Education, National Literacy Trust, Arts Council England, and partners.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== DIVIDER ========== -->
+    <div class="section-divider"></div>
+
+    <!-- ========== SECTION 10: CONTACT ========== -->
+    <section class="section-contact" id="contact">
+      <div class="contact-inner">
+        <div class="contact-text reveal">
+          The first chain is now taking shape.
+        </div>
+
+        <p class="contact-cta reveal">If this resonates, we'd like to talk.</p>
+
+        <a href="mailto:hello@whatwordsbecome.com" class="contact-email reveal">hello@whatwordsbecome.com</a>
+      </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="footer-copyright">
+          &copy; 2025 What Words Become. All rights reserved.
+        </div>
+        <div class="footer-credit">
+          A project by Arran D'Aubigny & John Berkavitch
+        </div>
+      </div>
+    </footer>
+
+  </div><!-- /site -->
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+=== style.css ===
+
+/* ============================================
+   WHAT WORDS BECOME — Design System
+   Transformation. Movement. Becoming.
+   ============================================ */
+
+/* --- Fonts --- */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Inter:wght@300;400;500&display=swap');
+
+/* --- Custom Properties --- */
+:root {
+  /* Palette */
+  --black: #0a0a0a;
+  --charcoal: #141210;
+  --charcoal-light: #1a1a1a;
+  --smoke: #8a8a8a;
+  --silver: #b0aba3;
+  --aged-white: #e8e4df;
+  --amber: #c9944a;
+  --amber-light: #d4a55a;
+  --amber-glow: rgba(201, 148, 74, 0.15);
+  --amber-dim: rgba(201, 148, 74, 0.08);
+
+  /* Typography */
+  --font-serif: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  /* Spacing */
+  --section-padding: clamp(80px, 15vh, 180px);
+  --content-max: 780px;
+  --content-wide: 960px;
+
+  /* Transitions */
+  --fade: 1000ms cubic-bezier(0.25, 0.1, 0.25, 1);
+  --fade-slow: 1400ms cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+/* --- Reset & Base --- */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--black);
+  color: var(--aged-white);
+  font-family: var(--font-sans);
+  font-weight: 300;
+  font-size: clamp(15px, 1.1vw, 17px);
+  line-height: 1.75;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: var(--amber);
+  color: var(--black);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: var(--amber);
+  text-decoration: none;
+  transition: color 400ms ease;
+}
+
+a:hover {
+  color: var(--amber-light);
+}
+
+strong {
+  font-weight: 500;
+  color: var(--aged-white);
+}
+
+/* --- Film Grain Overlay (Global) --- */
+body::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.03;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 256px 256px;
+}
+
+/* --- Scroll Reveal --- */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity var(--fade-slow), transform var(--fade-slow);
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ============================================
+   PASSWORD GATE
+   ============================================ */
+.gate {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  background: var(--black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 800ms ease, visibility 800ms ease;
+}
+
+.gate.unlocked {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.gate-inner {
+  text-align: center;
+  max-width: 400px;
+  padding: 0 24px;
+}
+
+.gate-logo {
+  width: clamp(200px, 30vw, 320px);
+  height: auto;
+  filter: invert(1);
+  opacity: 0.9;
+  margin: 0 auto 48px;
+}
+
+.gate-message {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: clamp(15px, 1.3vw, 18px);
+  color: var(--smoke);
+  margin-bottom: 40px;
+  letter-spacing: 0.02em;
+}
+
+.gate-form {
+  display: flex;
+  gap: 0;
+  max-width: 360px;
+  margin: 0 auto;
+}
+
+.gate-input {
+  flex: 1;
+  padding: 14px 20px;
+  background: rgba(26, 26, 26, 0.6);
+  border: 1px solid rgba(176, 171, 163, 0.15);
+  border-right: none;
+  color: var(--aged-white);
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0.08em;
+  outline: none;
+  transition: border-color 400ms ease;
+}
+
+.gate-input::placeholder {
+  color: var(--smoke);
+  opacity: 0.5;
+}
+
+.gate-input:focus {
+  border-color: rgba(201, 148, 74, 0.4);
+}
+
+.gate-button {
+  padding: 14px 24px;
+  background: transparent;
+  border: 1px solid rgba(176, 171, 163, 0.15);
+  color: var(--smoke);
+  font-family: var(--font-sans);
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 400ms ease;
+}
+
+.gate-button:hover {
+  border-color: var(--amber);
+  color: var(--amber);
+}
+
+.gate-error {
+  margin-top: 20px;
+  font-size: 12px;
+  color: var(--smoke);
+  opacity: 0;
+  transition: opacity 400ms ease;
+  letter-spacing: 0.04em;
+}
+
+.gate-error.show {
+  opacity: 0.7;
+}
+
+.gate-form.shake {
+  animation: shake 400ms ease;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateX(-8px); }
+  40% { transform: translateX(6px); }
+  60% { transform: translateX(-4px); }
+  80% { transform: translateX(2px); }
+}
+
+/* Hide site until unlocked */
+.site {
+  opacity: 0;
+  transition: opacity 1000ms ease 400ms;
+}
+
+.site.visible {
+  opacity: 1;
+}
+
+/* ============================================
+   NAVIGATION
+   ============================================ */
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding: 28px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background var(--fade), padding 600ms ease;
+}
+
+.nav.scrolled {
+  background: rgba(10, 10, 10, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 18px 40px;
+}
+
+.nav-logo {
+  display: block;
+  cursor: pointer;
+  line-height: 0;
+}
+
+.nav-logo-img {
+  height: clamp(80px, 10vw, 140px);
+  width: auto;
+  filter: invert(1);
+  opacity: 0.85;
+  transition: opacity 400ms ease;
+}
+
+.nav-logo:hover .nav-logo-img {
+  opacity: 1;
+}
+
+.nav-links {
+  display: flex;
+  gap: clamp(20px, 2.5vw, 40px);
+  list-style: none;
+}
+
+.nav-links a {
+  font-family: var(--font-sans);
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--smoke);
+  transition: color 400ms ease;
+  position: relative;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--amber);
+  transition: width 600ms cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.nav-links a:hover {
+  color: var(--aged-white);
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* Mobile menu toggle */
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.nav-toggle span {
+  display: block;
+  width: 22px;
+  height: 1px;
+  background: var(--aged-white);
+  margin: 6px 0;
+  transition: all 400ms ease;
+}
+
+/* ============================================
+   SECTION 1: HERO
+   ============================================ */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 24px;
+  overflow: hidden;
+  background: var(--black);
+}
+
+/* Background video */
+.hero-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  z-index: 0;
+  opacity: 0.6;
+}
+
+/* Ambient background */
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -20%;
+  left: -20%;
+  width: 140%;
+  height: 140%;
+  background:
+    radial-gradient(ellipse at 30% 40%, rgba(201, 148, 74, 0.04) 0%, transparent 60%),
+    radial-gradient(ellipse at 70% 60%, rgba(176, 171, 163, 0.03) 0%, transparent 50%);
+  animation: heroShift 30s ease-in-out infinite alternate;
+  z-index: 0;
+}
+
+@keyframes heroShift {
+  0% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(-1%, 1%) scale(1.01); }
+  100% { transform: translate(1%, -1%) scale(1); }
+}
+
+/* Vignette — darkens the background image */
+.hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at center, rgba(10, 10, 10, 0.65) 20%, var(--black) 85%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 680px;
+}
+
+.hero-title {
+  margin-bottom: 8px;
+  line-height: 0;
+}
+
+.hero-logo-img {
+  width: clamp(260px, 38vw, 480px);
+  height: auto;
+  filter: invert(1);
+  opacity: 0.95;
+}
+
+.hero-subtitle {
+  font-family: var(--font-serif);
+  font-size: clamp(16px, 1.4vw, 21px);
+  font-weight: 300;
+  color: var(--silver);
+  letter-spacing: 0.02em;
+  line-height: 1.7;
+  margin-top: 36px;
+  font-style: italic;
+}
+
+.hero-steps {
+  margin-top: 36px;
+}
+
+.hero-steps p {
+  font-family: var(--font-sans);
+  font-size: clamp(13px, 1.1vw, 16px);
+  font-weight: 300;
+  color: var(--smoke);
+  letter-spacing: 0.04em;
+  line-height: 2;
+}
+
+.hero-question {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: clamp(22px, 2.8vw, 38px);
+  font-weight: 300;
+  color: var(--amber);
+  margin-top: 48px;
+  letter-spacing: 0.02em;
+  line-height: 1.4;
+}
+
+.hero-scroll-indicator {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  opacity: 0.4;
+  animation: scrollPulse 3s ease-in-out infinite;
+}
+
+.hero-scroll-indicator span {
+  font-size: 9px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--smoke);
+}
+
+.scroll-line {
+  width: 1px;
+  height: 32px;
+  background: linear-gradient(to bottom, var(--smoke), transparent);
+}
+
+@keyframes scrollPulse {
+  0%, 100% { opacity: 0.4; transform: translateX(-50%) translateY(0); }
+  50% { opacity: 0.2; transform: translateX(-50%) translateY(6px); }
+}
+
+/* --- Section Divider --- */
+.section-divider {
+  width: 1px;
+  height: 80px;
+  background: linear-gradient(to bottom, transparent, var(--smoke), transparent);
+  margin: 0 auto;
+  opacity: 0.25;
+}
+
+/* --- Section Label (shared) --- */
+.section-label {
+  font-family: var(--font-sans);
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: var(--smoke);
+  margin-bottom: 48px;
+  opacity: 0.6;
+}
+
+/* ============================================
+   SECTION 2: THE FORMAT
+   ============================================ */
+.section-format {
+  padding: var(--section-padding) 24px;
+}
+
+.format-inner {
+  max-width: var(--content-max);
+  margin: 0 auto;
+}
+
+.format-intro {
+  text-align: center;
+  margin-bottom: 72px;
+}
+
+.format-intro p {
+  font-family: var(--font-serif);
+  font-size: clamp(22px, 2.5vw, 34px);
+  font-weight: 300;
+  line-height: 1.5;
+  color: var(--aged-white);
+}
+
+.format-intro .spark-list {
+  font-size: clamp(16px, 1.4vw, 20px);
+  color: var(--smoke);
+  margin-top: 12px;
+  font-style: italic;
+}
+
+/* Format Steps */
+.format-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  margin-bottom: 80px;
+}
+
+.format-step {
+  display: flex;
+  gap: 28px;
+  align-items: flex-start;
+}
+
+.step-number {
+  font-family: var(--font-serif);
+  font-size: clamp(28px, 3vw, 40px);
+  font-weight: 300;
+  color: var(--amber);
+  min-width: 48px;
+  line-height: 1.2;
+  opacity: 0.7;
+  text-align: center;
+}
+
+.step-content p {
+  font-family: var(--font-serif);
+  font-size: clamp(18px, 1.6vw, 24px);
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--aged-white);
+}
+
+.step-content .step-detail {
+  font-family: var(--font-sans);
+  font-size: clamp(13px, 1vw, 15px);
+  font-weight: 300;
+  color: var(--smoke);
+  margin-top: 10px;
+  line-height: 1.7;
+}
+
+/* Format Paradox */
+/* ============================================
+   SECTION 3: KILLER LINE — Full Screen
+   ============================================ */
+.section-killer {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--section-padding) 24px;
+  background: var(--black);
+  position: relative;
+  overflow: hidden;
+}
+
+.section-killer::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 40% 50%, rgba(201, 148, 74, 0.03) 0%, transparent 60%),
+    radial-gradient(ellipse at 60% 50%, rgba(176, 171, 163, 0.02) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.killer-inner {
+  text-align: center;
+  max-width: 900px;
+  position: relative;
+  z-index: 1;
+}
+
+.killer-line {
+  font-family: var(--font-serif);
+  font-size: clamp(28px, 4vw, 56px);
+  font-weight: 300;
+  line-height: 1.4;
+  color: var(--aged-white);
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.killer-line--second {
+  color: var(--amber);
+  margin-top: 20px;
+}
+
+.killer-subtext {
+  font-family: var(--font-sans);
+  font-size: clamp(14px, 1.2vw, 16px);
+  font-weight: 300;
+  color: var(--silver);
+  margin-top: 32px;
+  letter-spacing: 0.04em;
+}
+
+/* ============================================
+   SECTION 3: THE CHAIN
+   ============================================ */
+.section-chain {
+  padding: var(--section-padding) 24px;
+  background: var(--charcoal);
+  position: relative;
+}
+
+.section-chain::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 40%;
+  background: url('assets/chain-bg.png') center right / contain no-repeat;
+  opacity: 0.12;
+  pointer-events: none;
+}
+
+.section-chain::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgba(201, 148, 74, 0.15), transparent);
+}
+
+.chain-inner {
+  max-width: var(--content-max);
+  margin: 0 auto;
+}
+
+.chain-intro {
+  text-align: center;
+  font-family: var(--font-serif);
+  font-size: clamp(16px, 1.3vw, 20px);
+  font-weight: 300;
+  font-style: italic;
+  color: var(--silver);
+  line-height: 1.7;
+  margin-bottom: 72px;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.chain-intro em {
+  color: var(--aged-white);
+  font-style: italic;
+}
+
+/* Chain Timeline */
+.chain-timeline {
+  position: relative;
+  padding-left: 0;
+}
+
+/* Chain Link */
+.chain-link {
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+  position: relative;
+}
+
+.chain-link-marker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 48px;
+  padding-top: 4px;
+}
+
+.chain-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 1.5px solid var(--amber);
+  background: transparent;
+  transition: all 600ms ease;
+  flex-shrink: 0;
+}
+
+.spark-dot {
+  background: var(--amber);
+  box-shadow: 0 0 16px rgba(201, 148, 74, 0.3);
+  width: 14px;
+  height: 14px;
+}
+
+.next-dot {
+  border-style: dashed;
+  border-color: var(--smoke);
+}
+
+.chain-visibility {
+  font-size: 9px;
+  letter-spacing: 0.15em;
+  color: var(--smoke);
+  margin-top: 12px;
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+  opacity: 0.5;
+  text-transform: uppercase;
+}
+
+.chain-link-content {
+  flex: 1;
+  padding-bottom: 16px;
+}
+
+.chain-link-label {
+  font-family: var(--font-sans);
+  font-size: 9px;
+  font-weight: 400;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--smoke);
+  margin-bottom: 8px;
+  opacity: 0.6;
+}
+
+.chain-link-name {
+  font-family: var(--font-serif);
+  font-size: clamp(26px, 3vw, 40px);
+  font-weight: 400;
+  color: var(--aged-white);
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+}
+
+.chain-link-source {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: clamp(14px, 1.1vw, 17px);
+  color: var(--smoke);
+  margin-bottom: 20px;
+}
+
+.chain-link-quote {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: clamp(18px, 1.6vw, 24px);
+  font-weight: 300;
+  line-height: 1.6;
+  color: var(--aged-white);
+  padding-left: 20px;
+  border-left: 2px solid var(--amber);
+  margin-bottom: 16px;
+}
+
+.chain-link-note {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  color: var(--smoke);
+  font-style: italic;
+}
+
+.chain-link-form {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  color: var(--smoke);
+  margin-bottom: 12px;
+  opacity: 0.5;
+}
+
+.chain-link-description {
+  font-family: var(--font-sans);
+  font-size: clamp(13px, 1vw, 15px);
+  font-weight: 300;
+  color: var(--silver);
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
+
+.chain-link-status {
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--amber);
+  padding: 6px 14px;
+  border: 1px solid rgba(201, 148, 74, 0.25);
+  opacity: 0.8;
+}
+
+/* Chain Connector */
+.chain-connector {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 23px;
+  margin: 0;
+}
+
+.chain-line {
+  width: 1px;
+  height: 48px;
+  background: linear-gradient(to bottom, var(--amber), rgba(201, 148, 74, 0.2));
+  position: relative;
+}
+
+.chain-line::after {
+  content: '↓';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px;
+  color: var(--amber);
+  opacity: 0.5;
+}
+
+/* Spark link special treatment */
+.chain-link--spark .chain-link-content {
+  background: rgba(201, 148, 74, 0.04);
+  border: 1px solid rgba(201, 148, 74, 0.08);
+  padding: 28px;
+  margin: -12px 0 0 -12px;
+}
+
+/* Next episode link */
+.chain-link--next .chain-link-name {
+  color: var(--smoke);
+  font-style: italic;
+}
+
+.chain-link--next .chain-link-description {
+  color: var(--smoke);
+}
+
+/* Chain observation */
+.chain-observation {
+  text-align: center;
+  margin-top: 72px;
+  padding-top: 48px;
+  border-top: 1px solid rgba(176, 171, 163, 0.08);
+}
+
+.chain-observation p {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: clamp(18px, 1.8vw, 26px);
+  font-weight: 300;
+  line-height: 1.7;
+  color: var(--silver);
+}
+
+/* ============================================
+   SECTION 4: WHY THIS IS DIFFERENT
+   ============================================ */
+.section-different {
+  padding: var(--section-padding) 24px;
+}
+
+.different-inner {
+  max-width: var(--content-max);
+  margin: 0 auto;
+}
+
+.different-comparison {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: 64px;
+}
+
+.comparison-item {
+  text-align: center;
+}
+
+.comparison-label {
+  display: block;
+  font-family: var(--font-sans);
+  font-size: clamp(12px, 1vw, 14px);
+  font-weight: 300;
+  color: var(--smoke);
+  margin-bottom: 8px;
+  letter-spacing: 0.04em;
+}
+
+.comparison-question {
+  display: block;
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: clamp(20px, 2vw, 28px);
+  font-weight: 300;
+  color: var(--silver);
+}
+
+.comparison-question--ours {
+  color: var(--amber);
+  font-size: clamp(24px, 2.5vw, 34px);
+}
+
+.comparison-item--ours {
+  margin-top: 16px;
+  padding-top: 32px;
+  border-top: 1px solid rgba(201, 148, 74, 0.15);
+}
+
+/* ============================================
+   SECTION 6: WHAT WE'RE LOOKING FOR (AMBITION)
+   ============================================ */
+.section-ambition {
+  padding: var(--section-padding) 24px;
+}
+
+.ambition-inner {
+  max-width: var(--content-max);
+  margin: 0 auto;
+}
+
+.ambition-text {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.ambition-list {
+  font-family: var(--font-sans);
+  font-size: clamp(14px, 1.1vw, 16px);
+  font-weight: 300;
+  color: var(--smoke);
+  line-height: 2;
+  margin-bottom: 32px;
+}
+
+.ambition-statement {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: clamp(22px, 2.2vw, 30px);
+  font-weight: 300;
+  line-height: 1.6;
+  color: var(--aged-white);
+}
+
+/* ============================================
+   SECTION 6: WHY WE THINK THIS MATTERS
+   ============================================ */
+.section-matters {
+  padding: var(--section-padding) 24px;
+  background: var(--charcoal);
+  position: relative;
+}
+
+.section-matters::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgba(176, 171, 163, 0.1), transparent);
+}
+
+.matters-inner {
+  max-width: var(--content-max);
+  margin: 0 auto;
+}
+
+.matters-text {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.matters-text p {
+  font-family: var(--font-serif);
+  font-size: clamp(18px, 1.8vw, 26px);
+  font-weight: 300;
+  line-height: 1.6;
+  color: var(--silver);
+  margin-bottom: 20px;
+}
+
+.matters-text p:last-child {
+  margin-bottom: 0;
+}
+
+.matters-emphasis {
+  color: var(--aged-white) !important;
+  margin-top: 32px !important;
+}
+
+/* ============================================
+   SECTION 9: WHERE THIS COULD GO
+   ============================================ */
+.section-partnerships {
+  padding: var(--section-padding) 24px;
+}
+
+.partnerships-inner {
+  max-width: var(--content-max);
+  margin: 0 auto;
+}
+
+.partnerships-content {
+  margin-bottom: 64px;
+  text-align: center;
+}
+
+.partnerships-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px 32px;
+  margin-bottom: 48px;
+}
+
+.partnerships-list li {
+  font-family: var(--font-sans);
+  font-size: clamp(13px, 1.1vw, 15px);
+  font-weight: 300;
+  color: var(--aged-white);
+  letter-spacing: 0.04em;
+  position: relative;
+  padding-left: 20px;
+}
+
+.partnerships-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 6px;
+  border: 1px solid var(--amber);
+  border-radius: 50%;
+}
+
+.partnerships-vision {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: clamp(18px, 1.8vw, 24px);
+  font-weight: 300;
+  color: var(--silver);
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.partnerships-link {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.partnerships-link a {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  color: var(--amber);
+  border-bottom: 1px solid rgba(201, 148, 74, 0.3);
+  padding-bottom: 2px;
+  transition: all 400ms ease;
+}
+
+.partnerships-link a:hover {
+  border-bottom-color: var(--amber);
+}
+
+.partnerships-link-label {
+  display: block;
+  margin-top: 8px;
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--smoke);
+  opacity: 0.5;
+}
+
+.partnerships-supporters {
+  text-align: center;
+}
+
+.partnerships-supporters span {
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 300;
+  color: var(--smoke);
+  opacity: 0.5;
+  letter-spacing: 0.04em;
+}
+
+/* ============================================
+   SECTION 6: THE HOSTS
+   ============================================ */
+.section-hosts {
+  padding: var(--section-padding) 24px;
+}
+
+.hosts-inner {
+  max-width: var(--content-wide);
+  margin: 0 auto;
+}
+
+.hosts-intro {
+  text-align: center;
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: clamp(20px, 2vw, 28px);
+  font-weight: 300;
+  color: var(--silver);
+  margin-bottom: 64px;
+}
+
+.hosts-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 48px;
+  max-width: 860px;
+  margin: 0 auto 64px;
+}
+
+.host-member {
+  text-align: center;
+}
+
+.host-portrait {
+  width: 100%;
+  max-width: 280px;
+  aspect-ratio: 4/5;
+  background: var(--charcoal-light);
+  border: 1px solid rgba(176, 171, 163, 0.06);
+  margin: 0 auto 28px;
+  position: relative;
+  overflow: hidden;
+  transition: border-color 600ms ease;
+}
+
+.host-portrait img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 20%;
+  filter: grayscale(1) contrast(1.1) brightness(0.9);
+  transition: filter 600ms ease;
+}
+
+.host-portrait:hover {
+  border-color: rgba(201, 148, 74, 0.15);
+}
+
+.host-portrait:hover img {
+  filter: grayscale(0.6) contrast(1.05) brightness(0.95) sepia(0.15);
+}
+
+.host-name {
+  font-family: var(--font-serif);
+  font-size: clamp(22px, 1.8vw, 30px);
+  font-weight: 400;
+  color: var(--aged-white);
+  margin-bottom: 6px;
+}
+
+.host-role {
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--amber);
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+
+.host-bio {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 300;
+  color: var(--silver);
+  line-height: 1.7;
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+.hosts-approach {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto 56px;
+}
+
+.hosts-approach p {
+  font-family: var(--font-sans);
+  font-size: clamp(14px, 1.1vw, 16px);
+  font-weight: 300;
+  color: var(--silver);
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.hosts-focus {
+  font-family: var(--font-serif) !important;
+  font-style: italic;
+  font-size: clamp(16px, 1.3vw, 20px) !important;
+  color: var(--aged-white) !important;
+}
+
+/* Desired Outcomes */
+.hosts-outcome {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.outcome-item {
+  text-align: center;
+  padding: 32px;
+  background: var(--charcoal);
+  border: 1px solid rgba(176, 171, 163, 0.06);
+}
+
+.outcome-label {
+  font-family: var(--font-sans);
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--smoke);
+  margin-bottom: 16px;
+  opacity: 0.6;
+}
+
+.outcome-quote {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: clamp(15px, 1.2vw, 19px);
+  font-weight: 300;
+  line-height: 1.6;
+  color: var(--aged-white);
+}
+
+/* ============================================
+   SECTION 7: CONTACT
+   ============================================ */
+.section-contact {
+  padding: var(--section-padding) 24px;
+  background: var(--charcoal);
+  text-align: center;
+  position: relative;
+}
+
+.section-contact::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgba(201, 148, 74, 0.15), transparent);
+}
+
+.contact-inner {
+  max-width: var(--content-max);
+  margin: 0 auto;
+}
+
+.contact-text {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: clamp(20px, 2vw, 28px);
+  font-weight: 300;
+  line-height: 1.7;
+  color: var(--silver);
+  margin-bottom: 32px;
+}
+
+.contact-cta {
+  font-family: var(--font-sans);
+  font-size: clamp(14px, 1.1vw, 16px);
+  font-weight: 300;
+  color: var(--smoke);
+  margin-bottom: 40px;
+  letter-spacing: 0.04em;
+}
+
+.contact-email {
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-size: clamp(14px, 1.2vw, 17px);
+  font-weight: 300;
+  letter-spacing: 0.06em;
+  color: var(--amber);
+  padding: 16px 36px;
+  border: 1px solid rgba(201, 148, 74, 0.3);
+  transition: all 600ms ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-email::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--amber);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 600ms cubic-bezier(0.25, 0.1, 0.25, 1);
+  z-index: -1;
+}
+
+.contact-email:hover {
+  color: var(--black);
+}
+
+.contact-email:hover::before {
+  transform: scaleX(1);
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+.footer {
+  padding: 48px 40px;
+  border-top: 1px solid rgba(176, 171, 163, 0.04);
+  background: var(--black);
+}
+
+.footer-inner {
+  max-width: var(--content-wide);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.footer-copyright {
+  font-size: 10px;
+  letter-spacing: 0.15em;
+  color: var(--smoke);
+  opacity: 0.3;
+}
+
+.footer-credit {
+  font-size: 10px;
+  letter-spacing: 0.15em;
+  color: var(--smoke);
+  opacity: 0.3;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+@media (max-width: 768px) {
+  :root {
+    --section-padding: clamp(60px, 12vh, 120px);
+  }
+
+  .nav {
+    padding: 20px 24px;
+  }
+
+  .nav.scrolled {
+    padding: 16px 24px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  /* Mobile menu overlay */
+  .nav-links.open {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(10, 10, 10, 0.97);
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    z-index: 99;
+  }
+
+  .nav-links.open a {
+    font-size: 14px;
+    letter-spacing: 0.3em;
+    color: var(--aged-white);
+  }
+
+  .hero-content {
+    padding: 0 8px;
+  }
+
+  /* Format steps */
+  .format-step {
+    gap: 20px;
+  }
+
+  .step-number {
+    min-width: 36px;
+    font-size: 24px;
+  }
+
+  /* Chain */
+  .chain-link {
+    gap: 20px;
+  }
+
+  .chain-link-marker {
+    min-width: 36px;
+  }
+
+  .chain-visibility {
+    display: none;
+  }
+
+  .chain-connector {
+    padding-left: 17px;
+  }
+
+  .chain-link--spark .chain-link-content {
+    padding: 20px;
+    margin: -8px 0 0 -8px;
+  }
+
+  /* Comparison */
+  .different-comparison {
+    gap: 24px;
+  }
+
+  /* Hosts */
+  .hosts-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .host-portrait {
+    max-width: 240px;
+  }
+
+  .hosts-outcome {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  /* Footer */
+  .footer-inner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* Gate */
+  .gate-form {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .gate-input {
+    border-right: 1px solid rgba(176, 171, 163, 0.15);
+    text-align: center;
+  }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+
+=== script.js ===
+
+/* ============================================
+   WHAT WORDS BECOME — Interactions
+   ============================================ */
+
+document.addEventListener('DOMContentLoaded', () => {
+
+  // --- Password Gate ---
+  const gate = document.getElementById('gate');
+  const site = document.getElementById('site');
+  const gateInput = document.getElementById('gate-input');
+  const gateButton = document.getElementById('gate-button');
+  const gateError = document.getElementById('gate-error');
+  const gateForm = gateInput.closest('.gate-form');
+
+  // The password — change this to whatever you want
+  const PASSWORD = 'whatwordsbecome';
+
+  // Check if already authenticated this session
+  if (sessionStorage.getItem('wwb-auth') === 'true') {
+    gate.classList.add('unlocked');
+    site.classList.add('visible');
+  }
+
+  function attemptUnlock() {
+    const value = gateInput.value.trim().toLowerCase();
+
+    if (value === PASSWORD) {
+      sessionStorage.setItem('wwb-auth', 'true');
+      gate.classList.add('unlocked');
+
+      setTimeout(() => {
+        site.classList.add('visible');
+      }, 200);
+    } else {
+      gateError.classList.add('show');
+      gateForm.classList.add('shake');
+
+      setTimeout(() => {
+        gateForm.classList.remove('shake');
+      }, 500);
+
+      setTimeout(() => {
+        gateError.classList.remove('show');
+      }, 3000);
+    }
+  }
+
+  gateButton.addEventListener('click', attemptUnlock);
+  gateInput.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') attemptUnlock();
+  });
+
+  // --- Scroll Reveal (IntersectionObserver) ---
+  const reveals = document.querySelectorAll('.reveal');
+
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const delay = entry.target.dataset.delay || 0;
+        setTimeout(() => {
+          entry.target.classList.add('visible');
+        }, delay);
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.12,
+    rootMargin: '0px 0px -40px 0px'
+  });
+
+  reveals.forEach((el, i) => {
+    // Stagger reveals for grid items and chain links
+    const parent = el.parentElement;
+    if (parent && (parent.classList.contains('hosts-grid') ||
+                   parent.classList.contains('chain-timeline') ||
+                   parent.classList.contains('format-steps'))) {
+      const siblings = Array.from(parent.querySelectorAll('.reveal'));
+      const index = siblings.indexOf(el);
+      el.dataset.delay = index * 120;
+    }
+    revealObserver.observe(el);
+  });
+
+  // --- Navigation Scroll State ---
+  const nav = document.getElementById('main-nav');
+
+  function handleNavScroll() {
+    const scrollY = window.scrollY;
+    if (scrollY > 80) {
+      nav.classList.add('scrolled');
+    } else {
+      nav.classList.remove('scrolled');
+    }
+  }
+
+  window.addEventListener('scroll', handleNavScroll, { passive: true });
+
+  // --- Mobile Menu ---
+  window.toggleMenu = function() {
+    const navLinks = document.getElementById('nav-links');
+    const toggle = document.getElementById('nav-toggle');
+    navLinks.classList.toggle('open');
+
+    if (navLinks.classList.contains('open')) {
+      toggle.setAttribute('aria-label', 'Close menu');
+      document.body.style.overflow = 'hidden';
+    } else {
+      toggle.setAttribute('aria-label', 'Open menu');
+      document.body.style.overflow = '';
+    }
+  };
+
+  window.closeMenu = function() {
+    const navLinks = document.getElementById('nav-links');
+    navLinks.classList.remove('open');
+    document.body.style.overflow = '';
+  };
+
+  // --- Hero entrance animation ---
+  const heroContent = document.querySelector('.hero-content');
+  const heroScroll = document.querySelector('.hero-scroll-indicator');
+
+  // Only animate hero if site is visible (authenticated)
+  function animateHero() {
+    if (heroContent) {
+      heroContent.style.opacity = '0';
+      heroContent.style.transform = 'translateY(20px)';
+      heroContent.style.transition = 'opacity 1800ms ease, transform 1800ms ease';
+
+      setTimeout(() => {
+        heroContent.style.opacity = '1';
+        heroContent.style.transform = 'translateY(0)';
+      }, 300);
+    }
+
+    if (heroScroll) {
+      heroScroll.style.opacity = '0';
+      heroScroll.style.transition = 'opacity 1200ms ease';
+
+      setTimeout(() => {
+        heroScroll.style.opacity = '0.4';
+      }, 1800);
+    }
+  }
+
+  // If already authenticated, animate immediately
+  if (sessionStorage.getItem('wwb-auth') === 'true') {
+    animateHero();
+  } else {
+    // Animate after gate unlocks
+    const observer = new MutationObserver((mutations) => {
+      mutations.forEach(m => {
+        if (gate.classList.contains('unlocked')) {
+          setTimeout(animateHero, 800);
+          observer.disconnect();
+        }
+      });
+    });
+    observer.observe(gate, { attributes: true, attributeFilter: ['class'] });
+  }
+
+  // --- Chain line draw-in animation ---
+  const chainLines = document.querySelectorAll('.chain-line');
+
+  const lineObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.transform = 'scaleY(1)';
+        lineObserver.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.5
+  });
+
+  chainLines.forEach(line => {
+    line.style.transformOrigin = 'top';
+    line.style.transform = 'scaleY(0)';
+    line.style.transition = 'transform 800ms cubic-bezier(0.25, 0.1, 0.25, 1)';
+    lineObserver.observe(line);
+  });
+
+});
